@@ -10,4 +10,4 @@ class VowelConsonantReducer(Reducer):
         if total_letters > 0:
             vowel_pct = (total_vowels / total_letters) * 100
             consonant_pct = (total_consonants / total_letters) * 100
-            emit(f"слова з {key} символів", f"— {vowel_pct:.0f}% голосних, {consonant_pct:.0f}% приголосних")
+            emit(f"{key} символів", f"{vowel_pct:.0f}% голосних, {consonant_pct:.0f}% приголосних")
